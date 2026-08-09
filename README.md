@@ -1,14 +1,14 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="./dark_mode.svg"
+    srcset="https://raw.githubusercontent.com/AryanAdvant/AryanAdvant/main/dark_mode.svg"
   />
   <source
     media="(prefers-color-scheme: light)"
-    srcset="./light_mode.svg"
+    srcset="https://raw.githubusercontent.com/AryanAdvant/AryanAdvant/main/light_mode.svg"
   />
   <img
-    src="./light_mode.svg"
+    src="https://raw.githubusercontent.com/AryanAdvant/AryanAdvant/main/light_mode.svg"
     alt="AryanAdvant GitHub Profile"
   />
 </picture>
