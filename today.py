@@ -621,8 +621,11 @@ def stars_counter(data):
 
     total_stars = 0
 
-    for node in data:
-        total_stars += node['node']['stargazers']['totalCount']
+    for node in data['data']['user']['repositories']['edges']:
+        if node and node.get('node'):
+            stargazers = node['node'].get('stargazers')
+        if stargazers:
+            total_stars += stargazers.get('totalCount', 0)
 
     return total_stars
 
